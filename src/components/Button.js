@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Button = (props) => {
   let href = "/";
-  if (props.children === "Sign in") href = "login";
-  else if (props.children === "Register") href = "register";
+  if (props.children === "Sign in") href = "/";
+  else if (props.children === "Register") href = "/";
   return (
     <>
       <Link

@@ -13,26 +13,9 @@ export default function MyModal({ isOpen, setIsOpen }) {
           className="fixed inset-0 z-20 overflow-y-auto"
           onClose={closeModal}
         >
-          <div className="min-h-screen px-4 text-center">
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-90"
-              leaveTo="opacity-0"
-            >
-              <Dialog.Overlay className="fixed inset-0 bg-gray-900 opacity-90" />
-            </Transition.Child>
+          <div className="min-h-screen text-center flex items-center justify-center">
+            <Dialog.Overlay className="fixed inset-0 bg-gray-300 opacity-80" />
 
-            {/* This element is to trick the browser into centering the modal contents. */}
-            <span
-              className="inline-block h-screen align-middle"
-              aria-hidden="true"
-            >
-              &#8203;
-            </span>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
